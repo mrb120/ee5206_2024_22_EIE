@@ -1,9 +1,16 @@
-import sys 
+import sys
+
+def dog():
+    print('Baw')
+
 def default():
-    print("Hello")
+    print('Hello')
 
 def main():
-    default()
+    if sys.argv[1] == 'dog':
+        dog()
+    else:
+        default()
 
-if __name__=='__main__':
+if __name__ == '__main__':
     main()
